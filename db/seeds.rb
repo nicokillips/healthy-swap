@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Product.find_or_create_by_name('Cocoa Krispies', calories: 200, saturated_fat: 20, sugar_type: 'Proccessed Sugar')
+Product.find_or_create_by_name('Enviro Koala Kris', calories: 80, saturated_fat: 0, sugar_type: 'Organic Cane Sugar')

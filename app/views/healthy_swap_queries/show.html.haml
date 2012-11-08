@@ -1,0 +1,26 @@
+%p
+  Did you know that many major brand cereals have a
+  %br
+  healthier alternative? Did you also know that they taste just
+  %br
+  as good, if not better? Type in your favorite cereal below and
+  %br
+  then hit "Swap It" to see the healthier alternative!
+
+=simple_form_for @healthy_swap_query do |f|
+  .form-inputs
+    = f.input :favorite_cereal
+  .form-actions
+    = f.button :submit
+
+#product1.product
+  = @product1.name
+  = @product1.calories
+  = @product1.saturated_fat
+  = @product1.sugar_type
+
+#product2.product
+  = @product2.name
+  = @product2.calories
+  = @product2.saturated_fat
+  = @product2.sugar_type

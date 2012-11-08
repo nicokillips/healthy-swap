@@ -1,0 +1,2 @@
+module HealthySwapQueriesHelper
+end
