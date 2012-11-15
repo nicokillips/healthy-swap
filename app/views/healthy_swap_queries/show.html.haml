@@ -13,14 +13,20 @@
   .form-actions
     = f.button :submit
 
-#product1.product
-  = @product1.name
-  = @product1.calories
-  = @product1.saturated_fat
-  = @product1.sugar_type
+- if @product_swap
+  #product1.product
+    = @product_swap.unhealthy_product.name
+    = @product_swap.unhealthy_product.calories
+    = @product_swap.unhealthy_product.saturated_fat
+    = @product_swap.unhealthy_product.sugar_type
 
-#product2.product
-  = @product2.name
-  = @product2.calories
-  = @product2.saturated_fat
-  = @product2.sugar_type
+  #product2.product
+    = @product_swap.healthy_product.name
+    = @product_swap.healthy_product.calories
+    = @product_swap.healthy_product.saturated_fat
+    = @product_swap.healthy_product.sugar_type
+
+  #reason
+    %span Reason:
+    %span
+      = @product_swap.reason
